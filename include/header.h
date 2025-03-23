@@ -12,6 +12,6 @@
 
 
 void print();
-
+void byteswap_vector(std::vector<int16_t>& data);
 
 #endif
