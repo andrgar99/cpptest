@@ -11,6 +11,14 @@
 #include <iostream>
 
 
+
+#include <boost/endian/conversion.hpp>
+#include <type_traits>
+
+
+
+
+int16_t swap_endian2(int16_t val);
 void print();
 void byteswap_vector(std::vector<int16_t>& data);
 

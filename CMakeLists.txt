@@ -25,3 +25,8 @@ add_executable(threading ${SOURCES})
 
 # Link OpenCL and TBB libraries
 target_link_libraries(threading OpenCL tbb)
+
+
+#sudo apt install ninja-build
+#cmake -G Ninja ..
+#ninja -j$(nproc)

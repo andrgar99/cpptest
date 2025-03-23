@@ -4,10 +4,15 @@
 
 
 
-#include <boost/endian/conversion.hpp>
 
 
+// template short swap_endian(short);
 
+
+int16_t swap_endian2(int16_t val)
+{
+    return boost::endian::endian_reverse(val);
+}
 
 
 
