@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build for Debug",
+            "command": "/usr/bin/g++-13",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++23",
+                "-O2", // No optimizations for debugging
+                "-I${workspaceFolder}/include", // Add the include folder to the include path
+                "src/*.cpp", // Compile all .cpp files in the src folder
+                "-lOpenCL",
+                "-ltbb",
+                "-o",
+                "${workspaceFolder}/.vscode/threading"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task to build all .cpp files in the src folder for debugging."
+        },
+      
+    ],
+    "version": "2.0.0"
+}
