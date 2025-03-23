@@ -16,7 +16,7 @@
 #include <type_traits>
 
 
-
+int creatMmap();
 
 int16_t swap_endian2(int16_t val);
 void print();

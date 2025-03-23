@@ -18,8 +18,8 @@ int main(int argc, char* argv[])
     std::cout << c << std::endl;
 
 
-    print();
+    // print();
 
-
+    int a = creatMmap();
     return 0;
 }
